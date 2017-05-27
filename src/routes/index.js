@@ -1,6 +1,9 @@
 // We only need to import the modules necessary for initial render
+import { redirectToSpaceships } from '../modules/helper'
 import CoreLayout from '../layouts/PageLayout/PageLayout'
 import Home from './Home'
+import SpaceshipsRoute from './Spaceships'
+import SpaceshipRoute from './Spaceships/routes/Spaceship'
 import CounterRoute from './Counter'
 
 /*  Note: Instead of using JSX, we recommend using react-router
@@ -10,7 +13,10 @@ export const createRoutes = (store) => ({
   path        : '/',
   component   : CoreLayout,
   indexRoute  : Home,
+  onEnter     : redirectToSpaceships(store),
   childRoutes : [
+    SpaceshipsRoute(store),
+    SpaceshipRoute(store),
     CounterRoute(store)
   ]
 })
