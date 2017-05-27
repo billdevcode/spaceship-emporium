@@ -1,0 +1,29 @@
+.Spaceship {
+  padding: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+
+.Spaceship__Link {
+
+  &, &:hover, &:link {
+    text-decoration: none;
+  }
+}
+
+.Spaceship__Image {
+  max-width: 100%;
+  margin-bottom: 15px;
+  max-height: 14em;
+
+  @media (max-width: 767px) {
+    max-height: 100%;
+  }
+}
+
+.Spaceship__Title {
+  font-size: 20px;
+}
