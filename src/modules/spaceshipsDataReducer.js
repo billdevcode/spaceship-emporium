@@ -1,5 +1,7 @@
 import { createAction, handleActions } from 'redux-actions'
 
+export const selectSpaceshipsData = state => state.spaceshipsData.spaceships
+
 export const INITIAL_DATA = 'INITIAL_DATA'
 
 export const initialData = createAction(INITIAL_DATA)
