@@ -1,6 +1,6 @@
 import { createAction, handleActions } from 'redux-actions'
 
-export const selectSpaceshipsData = state => state.spaceshipsData.spaceships
+export const selectSpaceshipsData = state => state.spaceships.spaceshipsData
 
 export const INITIAL_DATA = 'INITIAL_DATA'
 
@@ -11,9 +11,9 @@ const spaceshipsDataReducer = handleActions({
     const { payload } = action
     return {
       ...state,
-      spaceships: payload.products
+      spaceshipsData: payload.products
     }
   }
-}, { spaceships: [] })
+}, { spaceshipsData: [] })
 
 export default spaceshipsDataReducer
