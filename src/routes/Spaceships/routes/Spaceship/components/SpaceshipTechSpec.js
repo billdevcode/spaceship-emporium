@@ -2,7 +2,7 @@ import React from 'react'
 import propTypes from 'prop-types'
 import './SpaceshipTechSpec.scss'
 
-const SpaceshipTechSpec = ({ spaceshipTechSpecs }) => {
+const SpaceshipTechSpec = ({ spaceshipPrice, spaceshipTechSpecs }) => {
   const {
     length,
     maxaccel,
@@ -19,22 +19,23 @@ const SpaceshipTechSpec = ({ spaceshipTechSpecs }) => {
       <header>
         <h3>Tech Specs</h3>
       </header>
-      <section>
-        <p>Length: {length || '*Unavailable'}</p>
-        <p>Max Acceleration: {maxaccel || '*Unavailable'}</p>
-        <p>MGLT: {MGLT || '*Unavailable'}</p>
-        <p>Maxatmosphericspeed: {maxatmosphericspeed || '*Unavailable'}</p>
-        <p>Hull: {hull || '*Unavailable'}</p>
-        <p>Sensor: {sensor || '*Unavailable'}</p>
-        <p>Targeting: {targeting || '*Unavailable'}</p>
-        <p>Armament: {armament || '*Unavailable'}</p>
-        <p>Communications: {communications || '*Unavailable'}</p>
+      <section className='SpaceshipTechSpec__Specs'>
+        {length && <p>Length: {length}</p>}
+        {maxaccel && <p>Max Acceleration: {maxaccel}</p>}
+        {MGLT && <p>MGLT: {MGLT}</p>}
+        {maxatmosphericspeed && <p>Maxatmosphericspeed: {maxatmosphericspeed}</p>}
+        {hull && <p>Hull: {hull}</p>}
+        {sensor && <p>Sensor: {sensor}</p>}
+        {targeting && <p>Targeting: {targeting}</p>}
+        {armament && <p>Armament: {armament}</p>}
+        {communications && <p>Communications: {communications}</p>}
       </section>
-      <button className='SpaceshipTechSpec__BuyButton btn btn-success btn-lg'>Buy</button>
+      {spaceshipPrice && <button className='SpaceshipTechSpec__BuyButton btn btn-success btn-lg'>Buy</button>}
     </div>
   )
 }
 SpaceshipTechSpec.propTypes = {
+  spaceshipPrice: propTypes.string,
   spaceshipTechSpecs: propTypes.object
 }
 

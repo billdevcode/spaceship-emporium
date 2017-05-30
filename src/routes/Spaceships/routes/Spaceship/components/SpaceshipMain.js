@@ -10,13 +10,13 @@ const SpaceshipMain = ({ spaceship }) => {
       <div className='SpaceshipMain__Image'>
         <Image name={name} />
       </div>
-      <h1 className='SpaceshipMain__Title'>{name || 'N/A'}</h1>
+      {name && <h1 className='SpaceshipMain__Title'>{name}</h1> }
       {price
         ? <h3 className='SpaceshipMain__Price'>${price}</h3>
         : <h3 className='SpaceshipMain__Price--sold-out'>Sold Out</h3>
       }
-      <p className='SpaceshipMain__Class'>Class: {classType || 'N/A'}</p>
-      <p className='SpaceshipMain__Manufacturer'>Manufacturer: {manufacturer || 'N/A'}</p>
+      {classType && <p className='SpaceshipMain__Class'>Class: {classType}</p>}
+      {manufacturer && <p className='SpaceshipMain__Manufacturer'>Manufacturer: {manufacturer}</p>}
     </div>
   )
 }
