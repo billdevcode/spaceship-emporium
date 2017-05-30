@@ -7,7 +7,7 @@ export default (store) => ({
     require.ensure([], (require) => {
       /*  Webpack - use require callback to define
           dependencies for bundling   */
-      const Spaceship = require('./containers/SpaceshipContainer').default
+      const Spaceship = require('./components/SpaceshipView').default
 
       /*  Return getComponent   */
       cb(null, Spaceship)

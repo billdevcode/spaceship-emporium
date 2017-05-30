@@ -1,0 +1,16 @@
+.SpaceshipMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.SpaceshipMain__Title {
+  text-transform: capitalize;
+}
+
+.SpaceshipMain__Price--sold-out {
+  color: red;
+}
