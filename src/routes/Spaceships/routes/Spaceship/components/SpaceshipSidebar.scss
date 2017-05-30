@@ -1,3 +1,16 @@
 .SpaceshipSidebar {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.SpaceshipSidebar__BuyButton {
+  margin-top: 50px;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
 }

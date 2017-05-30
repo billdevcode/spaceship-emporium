@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import SpaceshipShow from '../components/SpaceshipShow'
+import SpaceshipMain from '../components/SpaceshipMain'
 import { getSpaceshipId } from '../modules/helper'
 import { selectSpaceship } from '../modules/selectors'
 
@@ -21,4 +21,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SpaceshipShow)
+export default connect(mapStateToProps, mapDispatchToProps)(SpaceshipMain)
