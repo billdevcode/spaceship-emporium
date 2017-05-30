@@ -4,7 +4,7 @@ This challenge is to build an e-commerce looking site using React/Redux.
 
 The content comes from a JSON object we fetch through an API endpoint, dispatch it to Redux store, grab the data we want from a container then renders on the front-end through a component. The site is responsive and cross browser tested on Chrome, Safari, Firefox and IE 11. A boilerplate was used as the initial setup so we have cool things like hot reloading and code splitting.
 
-[./src/assets/wireframes.png](Wireframes) were provided for reference.
+[Wireframes](https://github.com/billdevcode/spaceship-emporium/blob/master/src/assets/wireframes.png) were provided for reference.
 
 ## Installation
 
