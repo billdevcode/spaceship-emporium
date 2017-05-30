@@ -12,7 +12,7 @@ The content comes from a JSON object we fetch through an API endpoint, dispatch 
 2. Go into the folder - `cd spaceship-emporium`
 3. Install dependencies - `yarn install` or `npm install`
 4. Start server - `yarn start` or `npm start`
-5. Open a browser and go to `http://localhost:3000`
+5. Open a browser and go to http://localhost:3000
 
 ## Structure
 
