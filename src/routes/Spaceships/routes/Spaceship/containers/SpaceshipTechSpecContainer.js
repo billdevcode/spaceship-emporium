@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import SpaceshipSidebar from '../components/SpaceshipSidebar'
+import SpaceshipTechSpec from '../components/SpaceshipTechSpec'
 import { getSpaceshipId } from '../modules/helper'
 import { selectSpaceshipTechSpecs } from '../modules/selectors'
 
@@ -15,4 +15,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SpaceshipSidebar)
+export default connect(mapStateToProps, mapDispatchToProps)(SpaceshipTechSpec)

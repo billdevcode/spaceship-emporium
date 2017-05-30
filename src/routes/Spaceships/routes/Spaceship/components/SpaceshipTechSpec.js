@@ -1,8 +1,8 @@
 import React from 'react'
 import propTypes from 'prop-types'
-import './SpaceshipSidebar.scss'
+import './SpaceshipTechSpec.scss'
 
-const SpaceshipSidebar = ({ spaceshipTechSpecs }) => {
+const SpaceshipTechSpec = ({ spaceshipTechSpecs }) => {
   const {
     length,
     maxaccel,
@@ -15,7 +15,7 @@ const SpaceshipSidebar = ({ spaceshipTechSpecs }) => {
     communications
   } = spaceshipTechSpecs
   return (
-    <div className='SpaceshipSidebar col-md-4 col-sm-12'>
+    <div className='SpaceshipTechSpec col-md-4 col-sm-12'>
       <header>
         <h3>Tech Specs</h3>
       </header>
@@ -30,12 +30,12 @@ const SpaceshipSidebar = ({ spaceshipTechSpecs }) => {
         <p>Armament: {armament || '*Unavailable'}</p>
         <p>Communications: {communications || '*Unavailable'}</p>
       </section>
-      <button className='SpaceshipSidebar__BuyButton btn btn-success btn-lg'>Buy</button>
+      <button className='SpaceshipTechSpec__BuyButton btn btn-success btn-lg'>Buy</button>
     </div>
   )
 }
-SpaceshipSidebar.propTypes = {
+SpaceshipTechSpec.propTypes = {
   spaceshipTechSpecs: propTypes.object
 }
 
-export default SpaceshipSidebar
+export default SpaceshipTechSpec
