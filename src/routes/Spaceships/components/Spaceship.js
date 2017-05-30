@@ -1,7 +1,7 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import { Link } from 'react-router'
-import Image from './Image'
+import Image from 'components/Image'
 import './Spaceship.scss'
 
 const Spaceship = ({ name, price, routeIndex }) => {

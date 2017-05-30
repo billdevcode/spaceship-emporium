@@ -1,6 +1,6 @@
 import React from 'react'
 import propTypes from 'prop-types'
-import Image from '../../../components/Image'
+import Image from 'components/Image'
 import './SpaceshipMain.scss'
 
 const SpaceshipMain = ({ spaceship }) => {
