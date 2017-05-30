@@ -1,8 +1,12 @@
-.page-layout__viewport {
-  padding-top: 4rem;
+.PageLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.page-layout__nav-item--active {
-  font-weight: bold;
-  text-decoration: underline;
+.PageLayout__MainContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
 }
