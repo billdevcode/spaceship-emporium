@@ -2,6 +2,7 @@ import React from 'react'
 import { browserHistory, Router } from 'react-router'
 import { Provider } from 'react-redux'
 import PropTypes from 'prop-types'
+import sampleData from 'sampleData/spaceships.json'
 import { initialData } from '../modules/spaceshipsDataReducer'
 
 class App extends React.Component {
@@ -19,7 +20,7 @@ class App extends React.Component {
     }).then(function (json) {
       store.dispatch(initialData(json))
     }).catch(function (ex) {
-      console.log('parsing failed', ex)
+      store.dispatch(initialData(sampleData))
     })
   }
 
